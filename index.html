@@ -9,6 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <style>
+            .font-manrope{
+              font-family: "Manrope", system-ui;
+              font-optical-sizing: auto;
+            } 
+    </style>
+
     <!-- FontAwesome cdn -->
     <script src="https://kit.fontawesome.com/61f157241a.js" crossorigin="anonymous"></script>
     <!-- Tailwind -->
@@ -25,7 +32,7 @@
         }
       </script>
 </head>
-<body>
+<body class="font-manrope">
   
   <!-- main content -->
 
@@ -66,12 +73,12 @@
     <!-- feature product section -->
       <section class="py-8 lg:py-24"> 
       <!-- title -->
-       <div class="text-center">
+       <div class="text-center mb-10">
         <h1 class="text-3xl md:text-4xl font-bold mb-5">Our Featured Products</h1>
         <p class="text-gray-600 max-w-xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
        </div>
 
-       <!-- grid card  -->
+       <!-- great card  -->
 
        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
 
@@ -119,7 +126,7 @@
 
       </section>
 
-      <!-- grid tea section -->
+      <!-- great tea section -->
        <section class="mb-24">
         <div class="grid grid-cols-1 lg:grid-cols-2">
 
@@ -226,73 +233,165 @@
         </div>
 
         <!-- news section home work -->
+         <section class="py-8 lg:py-24">
+          <div class="mb-24">
+            <!-- text section -->
+             <div class="mb-10">
+                <h1 class="text-5xl font-extrabold text-center">News & Events</h1>
+
+                <p class="text-gray-500 text-center max-w-xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+             </div>
+
+             <!-- news card section -->
+
+             <div class="grid md:grid-cols-3 gap-8">
+              <!-- 1 -->
+                <div class=" border-2 rounded-lg">
+                  <!-- 1 -->
+                      <img class="py-5 px-5" src="images/news-1.png" alt="">
+
+                      <!-- text -->
+                      <div class="px-5 py-5">
+                        <small class="text-gray-500">Feb 05, 2027</small>
+                        <br> <br>
+                        <h1 class="text-xl font-extrabold">Collecting 8 points for discount</h1>
+                        <br>
+                        <p class="text-gray-500">There are many variations of passages of Lorem Ipsum available.</p>
+                        <br>
+                        <small class="font-bold">Learn More</small>
+
+                </div>
+             </div>
+
+             <!-- 2 -->
+
+             <div class=" border-2 rounded-lg">
+              <!-- 1 -->
+                  <img class="py-5 px-5" src="images/news-2.png" alt="">
+
+                  <!-- text -->
+                  <div class="px-5 py-5">
+                    <small class="text-gray-500">Feb 05, 2027</small>
+                    <br> <br>
+                    <h1 class="text-xl font-extrabold">Collecting 8 points for discount</h1>
+                    <br>
+                    <p class="text-gray-500">There are many variations of passages of Lorem Ipsum available.</p>
+                    <br>
+                    <small class="font-bold">Learn More</small>
+
+            </div>
+         </div>
+             
+         <!-- 3 -->
+
+         <div class=" border-2 rounded-lg">
+          <!-- 1 -->
+              <img class="py-5 px-5" src="images/news-3.png" alt="">
+
+              <!-- text -->
+              <div class="px-5 py-5">
+                <small class="text-gray-500">Feb 05, 2027</small>
+                <br> <br>
+                <h1 class="text-xl font-extrabold">Collecting 8 points for discount</h1>
+                <br>
+                <p class="text-gray-500">There are many variations of passages of Lorem Ipsum available.</p>
+                <br>
+                <small class="font-bold">Learn More</small>
+
+        </div>
+     </div>
+         </div>
+         </section>
+         
 
   </main>
 
   <!-- footer section -->
 
   <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
-      <div class="w-9/1 mx-auto">
-        <!-- logo -->
-         <div class="mb-8 flex justify-between">
-          <img class="mb-8" src="images/cup.png" alt="">
+      <div class="max-w-screen-xl mx-auto px-16 lg:px-28">
 
-          <div class="flex items-center gap-2">
-            <h4>Ready to get strated?</h4>
-            <button class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white text-blod ">Get strated</button>
+        <div class="w-9/1 mx-auto">
+          <!-- logo -->
+           <div class="mb-8 flex justify-between flex-col lg:flex-row">
+            <img class="mb-8" src="images/cup.png" alt="">
+  
+            <div class="flex items-center gap-2">
+              <h4>Ready to get strated?</h4>
+              <button class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white text-blod ">Get strated</button>
+            </div>
           </div>
+  
         </div>
+  
+        <!-- links -->
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+            <!-- first column -->
+             <div>
+              <h3 class="font-semibold text-lg mb-3"> Quick Links</h3>
+  
+              <ul class="space-y-2">
+                <li ><a class="hover:text-orange-600" href="#">Home</a></li>
+                <li ><a class="hover:text-orange-600" href="#">About Us</a></li>
+                <li ><a class="hover:text-orange-600" href="#">Insurance</a></li>
+                <li ><a class="hover:text-orange-600" href="#">Privacy Policy</a></li>
+              </ul>
+  
+             </div>
+             <!-- 2nd column -->
+             <div>
+              <h3 class="font-semibold text-lg mb-3"> Our Service</h3>
+  
+              <ul class="space-y-2">
+                <li ><a class="hover:text-orange-600" href="#">Life Insurance</a></li>
+                <li ><a class="hover:text-orange-600" href="#">Car Insurance</a></li>
+                <li ><a class="hover:text-orange-600" href="#">Health Insurance</a></li>
+                <li ><a class="hover:text-orange-600" href="#">house Insurance</a></li>
+              </ul>
+  
+             </div>
+  
+             <!-- 3rd column -->
+  
+             <div>
+              <h3 class="font-semibold text-lg mb-3"> Help</h3>
+  
+              <ul class="space-y-2">
+                <li ><a class="hover:text-orange-600" href="#">FAQS</a></li>
+                <li ><a class="hover:text-orange-600" href="#">Contact Us</a></li>
+                
+              </ul>
+             </div>
+  
+             <!-- 4th column -->
+             <div>
+              <h1 class="text-gray-600 text-3xl font-bold mb-10">Subscribe to our newsletter</h1>
+              
+                <div class="flex justify-between items-center">
+                    <small class="text-gray-600">Email Address</small>
+                  <div class=""><i class="fa-solid fa-circle-chevron-right text-red-500"></i></div>
+                </div>
+                <br>
+                <div class="border border-gray-400"></div>
+                <br>
+
+                <div class="flex gap-4">
+                  <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                
+                
+              
+              </div>
+             </div>
+         </div>
+         
+         <div class="py-10"> 
+            <h1 class="text-center"> &copy; 2027 UIDesign.to - All rights reserved</h1>
+         </div>
 
       </div>
-
-      <!-- links -->
-       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
-          <!-- first column -->
-           <div>
-            <h3 class="font-semibold text-lg mb-3"> Quick Links</h3>
-
-            <ul class="space-y-2">
-              <li ><a class="hover:text-orange-600" href="#">Home</a></li>
-              <li ><a class="hover:text-orange-600" href="#">About Us</a></li>
-              <li ><a class="hover:text-orange-600" href="#">Insurance</a></li>
-              <li ><a class="hover:text-orange-600" href="#">Privacy Policy</a></li>
-            </ul>
-
-           </div>
-           <!-- 2nd column -->
-           <div>
-            <h3 class="font-semibold text-lg mb-3"> Our Service</h3>
-
-            <ul class="space-y-2">
-              <li ><a class="hover:text-orange-600" href="#">Life Insurance</a></li>
-              <li ><a class="hover:text-orange-600" href="#">Car Insurance</a></li>
-              <li ><a class="hover:text-orange-600" href="#">Health Insurance</a></li>
-              <li ><a class="hover:text-orange-600" href="#">house Insurance</a></li>
-            </ul>
-
-           </div>
-
-           <!-- 3rd column -->
-
-           <div>
-            <h3 class="font-semibold text-lg mb-3"> Help</h3>
-
-            <ul class="space-y-2">
-              <li ><a class="hover:text-orange-600" href="#">FAQS</a></li>
-              <li ><a class="hover:text-orange-600" href="#">Contact Us</a></li>
-              
-            </ul>
-           </div>
-
-           <!-- 4th column -->
-           <div>
-            <h1 class="text-gray-600 text-3xl font-bold mb-10">Subscribe to our newsletter</h1>
-            
-              <h2>Email Address <i class="fa-solid fa-circle-chevron-right"></i></h2>
-            
-            </div>
-           </div>
-       </div>
   </footer>
 
 
